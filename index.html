@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>4 ARALIK</title>
+</head>
+
+<body>
+    <!--İlk Sayfa: İsimler ve Yazı-->
+    <section class="intro">
+        <h1>Resul & Sude</h1>
+        <p>3. yılımız kutlu olsun sevgilimm</p>
+    </section>
+
+    <!--İkinci Sayfa: Ses Kaydı-->
+    <section class="audio-section">
+        <h2>Ses Kaydım</h2>
+        <audio controls>
+            <source src="ses.mp3" type="audio/mpeg">
+            Tarayıcınız bu ses dosyasını desteklemiyor.
+        </audio>
+    </section>
+
+    <!--Üçüncü Sayfa: Canlı Sayaç-->
+    <section class="counter-section">
+
+        <p id="counter"></p>
+    </section>
+
+    <script>
+        const startDate = new Date("2021-12-04");  // Sevgili olduğunuz tarih
+        const counter = document.getElementById("counter");
+
+        function updateCounter() {
+            const currentDate = new Date();
+            const diffTime = Math.abs(currentDate - startDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            counter.innerHTML = `${diffDays} gündür birlikteyiz!`;
+        }
+
+        setInterval(updateCounter, 1000);
+        updateCounter();
+    </script>
+
+    <!--Dördüncü Sayfa: Fotoğraflar-->
+    <section class="photo-gallery">
+        <h2>Yüzlerce video binlerce fotoğraf ve çok güzel anılar</h2>
+        <div class="photos">
+            <img src="kolaj1.jpeg" alt="Bir anı">
+            <img src="kolaj2.jpeg" alt="Bir anı">
+            <img src="kolaj3.jpeg" alt="Bir anı">
+            <img src="kolaj4.jpeg" alt="Bir anı">
+            <img src="kolaj5.jpeg" alt="Bir anı">
+            <img src="kolaj6.jpeg" alt="Bir anı">
+            <!-- Diğer fotoğraflar -->
+        </div>
+    </section>
+
+    <!--Beşinci Sayfa: Yazılar-->
+    <section class="writings">
+        <h2>Bazı önemli mesajlarımız</h2>
+        <p>Bölüm 1: Sevgilim , Canım , Güzelim
+            Seni ilk gördüğüm günden itibaren 68 gün 22 saat 16 dakika oldu Ve o zamanın ne kadar hızlı geçtiğinin
+            farkında bile olmadım.
+            Güzel anlar zaten çabuk geçermiş.
+            Seninle ilk buluştuğumuz gece birden aklıma Karamel açmak geldi sevgilim çünkü her zaman o şarkıyı dinleyip
+            aklıma seveceğim ve aşık olacağım bir kız geliyordu Ve sürekli istiyordum o kişinin gelmesini arzuluyordum.
+            Ama kim olduğunu bilmemek beni çok üzüyordu ama sonunda kim olduğunu biliyorum ve sürekli dinlediğimde
+            aklıma gelen kişinin sen olduğunu biliyorum sevgilim.
+            Aşık olduğum ilk kadın.
+            Belki bizim ilişkimiz çok hızlı gelişmiş olabilir ama bende kendimi biliyorum onun hızlı geliştiği kadar
+            bende o hızla sevip , bağlanıp , tutuldum.
+            Şuana kadar kavgalar ettik çok güzel zamanlar geçirdik ama hiç bir zaman birbirimizden kopmadık ve
+            kopmayacağızda benim sana olan ilgim daha ilk günkü gibi canlı ve dipdiri.
+            Sana olan sevgim ve aşkımda ilk günden itibaren sürekli artıyor ve kuvvetleniyor.
+            Bana bu gün ve 14 şubatın bir önemi olmadığını söyledin 14 şubat önemli olmayabilir benim seninle olduğum
+            her gün her saat her dakika benim için çok önemli ve çok özel ama senin doğduğun gün benim için en güzel
+            gün.
+            ‘11.02.2004’
+            Hiç bir kızı Aileme söyleyeceğimi düşünmezdim
+            bu kadar erken olacağını tahmin etmezdim ama senin hiç bir zaman bir sonunun olacağını düşünmüyorum
+            sevgilim. Az önce seni aradım doğum gününü hatırlattım bir insan doğduğu günü sevmez mi bu gün benim için en
+            güzel gün sürekli dediğim gibi kimileri için en küçük şey bazılarının en büyük olay bazıları için en büyük
+            olay kimileri için en küçük şey olabiliyor.
+            Seni neden seviyorum biliyor musun?
+            Sevilmeyi hakediyorsun , İlgiyi , Kıskanclığımı
+            Merağımı bütün duygularımı hakediyorsun ve hepsinin karşılığını verebiliyorsun sevgilim.
+            Gözlerine baktığımda her şeyinle beni sevdiğini değer verdiğini hissedebiliyorum.
+            Ve çok güzelsin.
+            Sürekli sana güzelsin diyorum ama kabul etmediğinde kuduruyorum sevgilim sen çok güzelsin çok güzelsin ve
+            çok güzelsin bu bu kadar basit. Saçların gözlerin kaşın burnun her şeyin çok güzel ve sadece BANA ÖZEL.
+            Dediğim gibi her haline şiirim ben.
+            Sen beni kudurtsanda sinirlendirsende mutlu etsende senin her haline bitiyorum ben sevgilim şımarsanda benim
+            için farketmez seni her şeyinle kabul ediyorum hiç bir eksikliğin yok
+            Benim eksikliğim var bana kalırsa ama bunların hepsini tamamlıyacağım sana söz veriyorum
+            Sana bir söz daha vericeğim sevgilim.
+            Seni bir daha asla ama asla üzmeyeceğim sana verdiğim sözler benim için çok ince bir çizgi bunu biliyorsun
+            sevgilim ve bu benim en büyük sözüm.
+            Uzun lafın kısası
+            Seni çok ama çok seviyorum aşkım sana aşığım ve bu gün en güzel gün
+            Az önce neden fotoğraf attırmadığını sordum ve bana çok üşendim açıklamaya diye yanıt verdin bense halbu ki
+            unutmayayım diye 00:00 ı bir sürü alarm kurdum seninle fotoğraf atabilmek ve bu mesajı sana yollayabilmek
+            için ama yinede her ne kadar üşengeç biri olsanda SANA HASTAYIM bu doğum günü mesajıma bir sürü duygumu
+            sığdırarak yazıyorum sana olan aşkımı , sevgimi , tribimi , sinirimi , hastalığımı bu güzel günde tekrardan
+            yanında olduğum için ÇOK MUTLUYUM SEVGİLİM uzun lafın kısası…
+            İYİ Kİ DOĞDUN SEVGİLİM NİCE MUTLU SENELER VE BİRLİKTE SENELERE SENİ ÇOK SEVİYORUM YAAAAAA 🖤
+            Belkide mesajımı ben çok acıktım yaaaa diyisimle okumuşsundur senin nasıl taklidimi yapıcağınıda merak
+            ediyorum açıkçası :))
+            11.02.2022</p>
+        <p>Bölüm 2: KARAMELİİİİMMM benim yolum iyi ki sana düşmüş iyi ki tanımışım seniii düşünsene seni tanımasaydım,
+            dudaklarına baktığımda yüzüneki küçük gülümsemeyi mutlu olduğunda kocamaannn gülümsemeni şapşal diyip
+            sarılırken sırıtmanı gıdıklanıncaki gülüşünü hiç görmeseydim, sesini hiç duymasaydım ,sevgini yaşamasaydım
+            ne kadar sıradan olurdu hayatım. Sen olmasaydın yağmurlarda sensiz ıslanıcaktım, sensiz üşüyecektim, sensiz
+            hasta olucaktım, sensiz uyumak sensiz uyanmak zorunda kalıcaktım düşünmesi bile kötü. Şans senden yana güldü
+            bana seni tanıdım, gülüşünü tanıdım, sen uyurken saçlarının her telini tanıdım, kokunu tanıdım. İYİ Kİ
+            TANIDIM.
+            Bana başkalarına olduğun kadar sert olamayışın kıyamadığın bebek gibi sevdiğin küçük kızın olmak o kadar
+            güzel ki. Sevdiğini bağıra çağıra söyleme gel kulağıma söyle istersen sadece ben biliyim bana yeter. Ben
+            seni nasıl seveceğimin kararını veremiyorum kalbim beni karıştırmıyo artık ama seni çok güzel sevdiğine
+            eminim kalbime güveniyorum. Seni delice seviyorum sende beni öyle sev istiyorum senin sevginin hiç sonu
+            olmasın istiyorum işten eve geldiğimizde kapıyı açar açmaz senin kucağına atlamayı istiyorum boynunu sarmak
+            istiyorum senin kucağında boynuna sarılı kalmak istiyorum bütün yorgunluğumun böyle geçmesini istiyorum. Ben
+            hep hayal kuruyorum seninle ilgili ve hepsini beraber gerçekleştiricez. Yaşanılası en güzel duyguların sende
+            var olduğunu öğrendim. Bana o kadar çok şey kattın ki her biri için teşekkür ederim bugünü en güzel günün
+            olarak yaşatıcam sana bugün hiç bir şeyi düşünmiycez her istediğini yapmaya çalışıcam çok güzel kutluycaz
+            benimle ilk doğum günün kutlu olsun hayatımın anlamı canım sevgilim ❤️ daha uzun bir yazı yazmıştım ama
+            saati gelmedi onu tam saatinde atıcam şimdilik bu kadar ama 17 Ağustos yeni başlıyo ve çabuk bitmiycek her
+            şeye hazır ol bugün seni çuvala atıp kaçırmayı bile deneyebilirim</p>
+        <p>Bölüm 3: Sevgilimmm hayatımı güzelleştiren adam şimdiye kadarki en büyük şansım sensin. Seni tanımak seninle
+            yakınlaşmak her günü seninle yaşamak anlatamayacağım kadar güzel. Sana aslaa doyamıyorum doymak da
+            istemiyorum aslında. Sürekli yanında olmak hep sarılmak hayatımı ellerini tutup gözlerine bakarak geçirmek
+            istiyorum çünkü sen ellerimi tutup bana bakınca ben nereye ait olduğumu görüyorum sana ait olduğumu
+            anlıyorum ve sen yanımda yokken kim olursa olsun yalnız kalıyorum sadece seninle dolu dolu yaşıyorum ve
+            böyle olmayı seviyorum seninle gülmeyi seninle ağlamayı seninle kavga etmeyi seninle çocuklaşmayı seninle
+            ilgilenmeyi kucağıma yatınca yüzün ve saçlarınla oynamayı yanında uyumayı hiçbir şeye değişmem sevgilim.
+            Seni ilk gördüğüm an biz durakta beklerken ön koltuktaki oturuşundu ilk temasın arabadan inip dışarda müzik
+            dinlerken bana söylediğin şeyi yanlış anlamıştım sende omuzlarımdan tutup öyle değil be kadın demiştin ilk
+            öpüşün senin için en kötüsü olsada benim hala unutamadığım en güzelini sorduğunda da hepsi güzeldi ama ilk o
+            geldi aklıma ve onu söyledim bi gün sonra yağmurda benim için motorla gelmen caminin köşesinde bekleyişin
+            ben her sabah okul servisine binerken aklıma geliyodu motorla okula geçtiğimizde sana ilk sıkı sıkı sarılmam
+            sonra beni ilk arabayla alışın antrenmandan çıkmıştım parfümüm o gün sen beni almaya geldin diye telaşla
+            çantamı toplarken kırılmıştı senin için ilk ağlayışım bana ayrılırsak seni hak eden birini bul demen orda
+            ağladım çünkü senden ayrılma düşüncesi senden başka biriyle olma düşüncesi çok kötü geldi hala öyle. Beni
+            tanıştırdığın ilk arkadaşın o gün seni teyzemle tanıştırmam daha sonra teyzemle canlı tanışman annenle
+            telefonda konuştuktan sonra seninde beni onunla görüştürmen medine yengen dayın kuzeninle tanışmak bunlara
+            sonra geçicem ama çok özel duygulardı. Senin canın sıkkındı dershane çıkışı gelememiştin ama buluşamayacağız
+            diye bir şey yok her gece takıldığın büfeye geldim senin için seni biraz da olsa mutlu edebilmek yanında
+            olmak için. Beni hep gittiğin dönerciye götürdün ordaki ablayla tanıştırdın başka bi zaman çalıştığın
+            yerdeki insanlarla tanıştırdın . Kütüphaneye gittik o kadar güzel çalıştın ki ağlayasım geldi ordan sonra
+            pirayede ilk defa çift olarak birileriyle dışarı çıkmamız sonra çift olarak cs oynamamız daha sonra bu 3
+            çiftin beraber çıkması güzel zamanlardı. Festivale gidip eğlenmemiz de vaarrr. Balıkçı kankanla selini
+            tanıştırdığımız gece de çok güzeldi büfede kahve içmeye gittiğimizde geceyi anlatmışı söylediğin videoyu
+            hala izliyorum. Dedemin eve ilk gidişimiz sana sarılıp uyumak arabadayken de çok güzel ama orda sana daha
+            yakın ve istediğim şekilde sarılıp uyuduktan sonra anladım ki ben hep sana sarılıp uyumalıyım. Bowlinge ilk
+            gidişimizzz benim yenilmem sonra hırslanıp birdahaki gidişimizde yenmemm vee internet kafeye gittiğimiz gün
+            de çok keyifliydii amaa maç izediğimiz gece ilk defa bi maçta öne geçtik diye o kadar mutlu olmuştum. Maç
+            diyince mahalleme gelip burdaki çocuklarla top oynamann😍 babamın o günkü tepkisi hala aklımdaa sonra
+            seninle voleybol maçı yapmamızzz çok iyi oynuyorsun askım harikasın bi insan bu kadar her şeyde iyi
+            olabilir. Seninle alışverişe gittiğimizde hep evlenince de öyle olucağımızı hayal ediyorum sanki aynı evde
+            yaşıyoruz evimize bir şeyler alıyormuşuz gibi geliyo bunu bi gün yaşıyacağımızı biliyorum. Sana çorba
+            yaptığım gün sen hastayım dediğinde üzülmüştüm çünkü hafif de olsa senin acı çekmene dayanamam kıyamadım ve
+            annemin bana küçüklüğümden beri yaptığı vitamin çorbasını sordum ilk defa annemden böyle bir şey istedim
+            çünkü sana değer sana daha önce kek yapmıştım kimse beğenmesede yaptığım şeyleri bana karşı övmen beni içten
+            içe mutlu ediyo senin için bir şeyler yapmam ve senin beğenmen benim için çok güzel. Bize ilk geldiğinde
+            traliçe yapmaya çalıştık az çok oldu önemli olan seninle yapmaktı sonra yatağımda göğsüme yatman o kadar
+            huzur verici ki sonsuza kadar orda yatsan sesimi çıkarmam. Seninle sarhoş olmak ayrı güzel zaten dedemin
+            evde sarhoş olmamız beni o halde eve bırakmak istememen okulda yan yana kusmamızz. Seninle yıldızları
+            izlemekten hayaller kurmaktan gelecekle geleceğimizle ilgili konuşmaktan hiç sıkılmam. Hani bana seni
+            üzüyorum diyosun ya çok şapşalsın sen olmasan ben çok dağılırdım diğer üzüldüğüm şeyler için elimden bir şey
+            gelmiyo ama senin için her ağladığımda ağlayışımın kat kat fazlası gülüyorum seninle bana o kadar iyi
+            geliyorsun ki kalbimi açtım sana en saf en savunmasız halimi gösterdim çünkü beraber sarılıp ağlayabileceğim
+            ağladıkça rahatlayabileceğim rahatladıkça sil baştan sevebileceğim iyiki ona sahibim ne kadar şanslıyım
+            diyebileceğim yanında güçlü gibi davranmak zorunda hissetmeyeceğim tek kişisin. Sen ailemden birisin ilerle
+            seninle bi ailemiz olucak ama şuan tek yapabildiğim seni şimdiki ailemle yakın tutmak seni bazen babama
+            benzetiyorum bana kıyamadığın zamanlar küçük kızmaların üstümü örtmeye çalışman babam küçük kızını nasıl
+            seviyosa bu kızı onun gibi içten sevmen öz abim yada erkek kardeşim yok ama senin beni abi gibi koruman
+            yanında güvende huzurlu hissettirmen. Ben güzel kızıma ve oğluşuma doğru babayı buldum bence beni böyle
+            güzel seven kendi çocuklarını kim bilir ne kadar çok sever ben bunları düşünüyorum ve neden bilmiyorum ama
+            sürekli düşünüyorum sende yaşadığım bu duyguyu kontrol edemiyorum sadece sende var bu hislerin karşılığı
+            seni nedensiz seviyorum ama her şeyin de seni sevme sebebim. Düşünsene sabah uyanıyorsun gözlerini açtığında
+            benim sana hayran bakışlarım karşında gözlerimde seninle ne kadar mutlu olduğumu ve dünyada seni benden
+            başka hiç kimsenin bu kadar sevemeyeceğini seni kaybetmekten incitmekten ve hatta bir anlık bile olsa
+            üzmekten korktuğumu görüyorsun. Seninle beraber yaşadığımızda nasıl olur diye hayal kurmayı çok seviyorum
+            hayali bile içimi bu kadar hoş ediyorsa gerçeği beni deli gibi mutlu eder. Senin beni en çok güldüren yanın
+            bitmeyen enerjin ve çocuksu yanın mesela margide oyuncaklarla oynadığımız zaman en son çok küçükken
+            oynadığım şeylerle seninle tekrar o zamanlara gittim bizim mahallede spor parkında salıncaklarda birbirimizi
+            sallamamız da çok tatlıydı. Benim yine sana trip attığım bi gün senin beni ananene götürmen beni çok
+            şaşırtmıştı ve değerli hissettirmişti ananenin duygulanıp ağlaması hala aklımda o gün Akardere de motor
+            kullandım sonra natoda bedava şöför oldum. Sizin eve geldim uyuduk kaç defa çizgi filim izlerken yemek yedik
+            kıyıkta gezdik ben kıyığa kendim geldiğimde de çok eğlenceliydi yolun ortasından yürüdüğümde bana dediğin
+            şeyi unuttuğumda bana gülüşün dondurmalarımızla yürümemiz. En kötüsü seninle vedalaştığım otogar günü ama
+            sonra beni çiğ köfteyle karşıladığın zaman bütün özlemimiz geçtii ve en güzel anımızadn biri geliyo
+            biiisikleeett turuuu sabah senin yürüyerek istasyona gelmen ormanın ordaki sevimli köpeğimize bisiklet adını
+            vermemiz Atatürk anıtına kadar zaten yorulmuşken bide ordan Karaağaç yeni köprüdeki bayırı ayıla bayıla
+            çıkmamız yorucuydu kahvaltı iyi gelmişti ama bisiklet bozulana kadar bütün sorun bisikletti Karaağaç dan
+            istasyona şarkı dinleyerek gelmemiz unutulmaz bi anı oldu bence. Mezun olduğum gün çok güzel hazırlanmıştın
+            askımm benim için acı bi gündü bacağım açısından ama o da güzeldi sayende ıhlamur toplamaya gittiğimiz gündü
+            ayrıca. İlk sinemamız margide Jurassic World oldu ve minik dinozorun annesine kavuşması çok tatlıydıı😻
+            benim sana kavuşmam gibii sonra sineması kapalı sandığımız erastada Dr Strange izledik ve birbirimizi başka
+            evrenlerde de sevdiğimizi öğrendikk😻 arabada anason dinlerken zengin olunca zakkum nerde konser veriyosa
+            oraya gidip dinliycez bunu demiştin birkaç gün sonra zakkum geldi ve bi hayal daha gerçekleşti. Seninle 2.
+            Kahvaltımıza gittik en güzel 2. Kahvaltımdı 1. İlk gittiğimiz zaten su savaşı yaptık ben başlattım sen
+            bitirdinn. Bir bayram daha geçirdik beraber ve daha bir sürü bayramımız olucak evimizde beraber hazırlanıp
+            senin aileni benim ailemi ziyarete gidicez. Seninle sizin evde kendi evimizi yaptık boyadık parmak
+            izlerimizden kalbi ilerdeki evimize de yapalım. Hamak kurduk birkaç gün iyi idare etti sonra dayanamayıp pes
+            etti attı bizi yere ama o da çok güzel bi anı oldu. Benim sınav sonuçlarıma beraber baktık tercihlerimi
+            beraber yaptık birlikte kalmak için sadece seninle kalmak için her şeye katlanırım sevgilim. Pamuk şeker
+            aldın bebek gibi bakıyorsun bana yaaaa
+            4 ay sonra 1 yıl olucak güldüğümüz, ağladığımız, korktuğumuz, küstüğümüz, barıştığımız, beraber uyuyup
+            uyandığımız, el ele tutuştuğumuz, sarıldığımız, şımardığımız, çocuklaştığımız, birbirimize destek olduğumuz,
+            kıskandığımız, göz göze kaldığımız, birbirimize aşık olduğumuz koca bir sene…Sen araba sürerken omuzuna
+            yattığım zamanlar çok huzurlu yada kucağına yattığım seninde saçlarımla oynadığın. İlgini çok seviyorum
+            özellikle bana verdiğin değer çok özel sevgin de bana özel.Keşke sana her zaman neler hissettiğimi
+            düşündüğümü anlatabilsem ama yapamıyorum özlemimden ölsem soğuk yapmaya devam edebilicek bi kişiliğim var
+            maalesef ama seni her zaman çok sevdiğimi bil çünkü ben biliyorum en küçük şeylere bile kızmam seni
+            gerçekten önemsediğim için.
+            bu zamana kadar tanıdığım kimseye benzemediğin herkesten farklı davrandığın için beni bu hayatta yalnız
+            hissettirmediğin yalnız başıma bırakmadığın için ve elimi tutmaktan asla vazgeçmediğin her zaman daha sıkı
+            tuttuğun için teşekkür ederim sevgilim 256. güzel günümüz bugün. 21 yaşında yaşlı bir çocuk olmak seni
+            üzmesin sen tanıdığım en yakışıklı ihtiyar olucaksın. Mahalle maçı yapıp aksam ezanı okununca eve dönemezsin
+            belki ama ilerideki çocuğumuzla top oynayabilirsin her yere yürüyerek gidip yorulmaman için el ele yürümemiz
+            gerekiyo sabaha kadar beraber bilgisayar oynarız kimse fişi çekemez çünkü senin ödemek istemediğin
+            faturaları bölüşerek ödiycez sana o zamanların aynısını yaşatamam ama benimle o zamanlarındaki gibi
+            yaşayabilirsin
+            seni her evrende çok seviyorum iyi ki hayatımdasın ve hep ol 🖤İYİ Kİ DOĞDUN❤️</p>
+        <p>Bölüm 4: Güzel kızın 19. Doğum Günü İlişkimizin olduğu 2. Doğum günü Kelebeğim , Birtanem , Bıldırcınım ,
+            Güzelim seninle çok güzel 1 yıl 2 ay geçirdik kimi güldük kimi eğlendik kimi üzüldük kimi sevindik kimi
+            mutlu olduk. Seni hep sinirlendirdim bunun için özür dileme diyorsun ama ben salak olduğum için yavaş yavaş
+            anlıyorum öğreniyorum her şeyi bizim ilişkimiz 1 yaşında sen hiç 1 yaşında olan bir bebeğe ağlama diyebilir
+            misin hayır diyemezsin bende diyemem desen bile anlamaz bizde yavaş yavaş birlikte büyüyoruz.
+            Anıl Piyancı ne demiş;
+            Yaşım onyediydi seni gördüğümde
+            Okulun bahçesinde göz göze geldik ilk kez
+            Küçük bi çocuktuk ve
+            Aşkla beraber büyüdük
+            Aşkı beraber büyütüp
+            Aşkım beraber büyüdük
+            Bizde onun dediği gibi beraber büyüyoruz.
+            Önemli olan birlikte olmamız her şeyin üstesinden birlikte gelebileceğimizi biliyorum
+            İleride bu günleri birbirimize anlatacağız ve iyi ki hep birlikte kalmışız diyeceğiz sınavlarımıza
+            çalışacağız sen bana hep çalış de ben seni dinlerim güzel mutlu rahat bir hayatımız olması için uğraşacağım
+            beraber başaracağız.
+            Güzel bir evimiz olsun işten geldiğimde kucağımda odaya götüriyim seni öpiyim kahvemizi yapalım birlikte
+            içelim sen bana içerde sigara içmek yasak de kız bana bende soğukta balkonda duriyim sen bana ordan gül ben
+            sana sinir olup yastık fırlatıyım birlikte eğlenelim dizi izleyelim patlamış mısır yapalım ben gizliden tuz
+            dökiyim içine sen bana kız göğsümde uyuyakal bende orda uyiyim her şey böyle olsun istiyorum. Bütün doğum
+            günlerimizde birlikte kutlayalım çocuk yapmaya hemen gerek yok köfteyi alalım eve pasaklıyı alalım sonra
+            çocuğu düşünürüz ama çocuk olmadanda olmaz gerçi ikimizde hep çocuk olucağız. Birbirimizi büyütücez hani
+            anne babasının gözünde çocukları hep çocuk olarak kalır ya gözlerinde sen hep ilk tanıştığımız günkü gibisin
+            gözümde ne eksik ne fazla her şeyin aynı. Hiç bir şeyin değişmedi ben öyle düşünüyordum ama sen hep o güzel
+            kalpli küçücük kalpli Sudesin gözümde sevgilim
+            Sen benim doğum günümü çok güzel kutladın önemli olan pahalı hediyeler değil önemli olan düşünmen bana kimse
+            böyle hediyeler sürprizler yapmamıştı ama sen yaptın Doğum günümde 1. Yılımızda senin hediyelerin her zaman
+            benimkilerden daha güzel bunu biliyorum sende bil lütfen sevgilim çünkü sen beni çok düşünüyorsun
+            önemsiyorsun seviyorsun bunlar paraya alınamiyicak şeyler.
+            Ben sürekli senin doğru kişi olduğunu biliyorum ve iyi ki tanışmışım seninle yarın inşallah her şey çok
+            güzel olucak. İyi ki Doğdun Sevgilim. İyi ki Hayatımdasın Sevgilim Hep Yanımda Ol Lütfen Bıldırcınım Seni
+            Çok Seviyorum Minik Bıldırcınım 19 Yaşında Yarın Suffle Günü Sufflemmm 🖤🖤🖤
+            Deprem oldu insanlar çok üzgün herkes çok üzgün keşke olmasaydı keşke insanlar ölmeseydi ama inşallah her
+            şey güzel olucak sen kutlamak bile istemiyorsun biliyorum benimde moralim çok bozuk inşallah Allah herkese
+            yardımcı olur herkese</p>
+        <p>Bölüm 5: Bu sefer aylar önce yazmaya başlamadım son anda içimden ne gelirse diye bekledim belki diğeri gibi
+            uzun olmaz ama olsun
+            Benimle daha birsürü doğum günün olucak bu daha 2. doğum günün ilkinde çok plan yaptım çoğu planladığım gibi
+            olmadı ama yinede mutlu edebildiğimi düşünüyorum. Bunun içinde planlarım çok başkaydı ama yine olmadı
+            Bugün 1 yıl 8 ay ve 13. Günümüz neredeyse 2 yıl olucak ve zaman çok hızlı geçti birsürü güzel anımız oldu
+            kötü zamanlar da oldu ama hepsi geçti kavga ettiğimizde ikimizde üzüldük hep ama sonra yine gülebildik çünçü
+            sen çok kötüsün. Seninle ilk tanıştığımız günü anlatırken o günü yaşadım tekrar konuştuğumuz nokta elini
+            tuttuğum an seni öptüğüm an sarıldığım an hepsini yaşıyomuş gibi hissettim tabi hepsini anlatmam onlar
+            sadece bizim anımız🥹 ama seni ilk gördüğüm ve aşık olduğum an aklıma gelince hala heyecanlanıyorum keşke o
+            canlı yayına tekrar ilk defa girip o heyecanı yaşasam şapşal şapşal gülsem seni izlerken. Aradan 1 yıl geçti
+            aynı günü yaşamak isterken aynı tarihi farklı anılarla yaşadık ve o da çok güzeldi ben sana koca 1 yılımızın
+            anılarını verdim sende hiçbir şey gülüşünden önemli değil bilekliğimi taktın yani takarken öyle söylediğin
+            için onun adı benim için öyle ve çok anlamlı. Seninle birlikte yaşayacağımız güzel günlerin yılların bir
+            ömrün hayalini kuruyorum. Birlikte büyüyoruz ikimizde bazen fazla inatçı ve kıskanç olabiliyoruz
+            kıskandığımızı sinirle belli etmeyi bırakabilirsek sevdiğimiz için olduğunu gösterebilsek birbirimizi üzmeyi
+            bırakabiliriz aslında ama bunlarda zamanla olur. Bugün için güzel planlarım var umarım her şey planladığım
+            gibi olur ve senin en güzel doğum günün olur ben daha iyisini yapana kadar hep en iyisi en sonuncu olucak
+            her sene bi öncekinden güzel kutlamak için elimden geleni yapıcam bugün hediyen bozulduğu için üzüldüm ama
+            tekrar alıcam onunla eğlenirsin diye düşünerek almıştım bide para biriktirirsin diye🥺
+            Yarın için uykunu güzel al çok yorulucaksın ben zaten yorgunum ama seninle gezmek için hala enerjim var🥹
+            seni çok çok çok seviyorum iyi ki benimsin iyi ki tanışmışız iyi ki hayatımdasın hep oll❤️❤️❤️❤️ çok güzel
+            yaşlarımız olsun sevgilimm❤️❤️❤️‍🔥❣️😻💘💖💓</p>
+        <p>Bölüm 6: Bugün için 4 Aralığa gitmeyi düşündük hep tanıştığımız yerde yeniden tanışmayı istedik ben hayal
+            ettim o gece sorduğumuz soruları sorucaktık oraya giderkenki anılarımız ordaki o anlar canlanıcaktı gidince
+            ama maalesef oraya gidemiyoruz buna çok üzüldüm sende üzüldün biliyorum ama bi yandan iyi oldu çünkü 4
+            Aralık 2021 sadece o zaman yaşandı o anlar sadece o gün oldu ve ne kadar uğraşsakta aynılarını yapamayız
+            zaten çünkü onlar ilkti bizim ilklerimiz.
+            O gece bir kere yaşandı ve ona dair hiç bir fotoğraf yada başka bir şey yok elimizde bu o gecenin güzelliği
+            sadece ikimizin aklındaki anlar sadece bizim hatırladıklarımız bildiklerimiz kaldı ve oraya gidememek üzücü
+            olsada 4 Aralık 2021 tarihini daha da unutulmaz yaptı bence.
+            Seninle bir yıl çok güzeldi sevgilim biz artık 1 yaşındayız seninde dediğin gibi bebek daha ilişkimiz 😮🥺 o
+            yüzden bilmediğimiz anlayamadığımız çok şey oluyo aramızda ama zamanla ezbere bilicez her şeyi ve beraber
+            öğrenicez büyümeyi❤️
+            Sana kızıyorum çünkü seni seviyorum
+            Seni kıskanıyorum çünkü seni seviyorum
+            Sürekli trip atıyorum çünkü seni seviyorum
+            Üzülüp ağlıyorum çünkü seni seviyorum
+            Sana kıyamıyorum çünkü seni seviyorum
+            Ve daha bunlar gibi bir sürü şey var yaptığım ama hepsinin sebebi seni çok seviyorum 😻
+            Uyumadan önce seninle olduğum hayaller kuruyorum bazıları kabusa dönüyo uyurken hayalimin tam tersi oluyo
+            ama yine de senin hayalin çok güzel düşünürken yarısında uyuya kalıyorum ama gerçekleşirken yarıda kalmıycak
+            bunu biliyorum.iyi ki hayatıma girdin sana karşı kırgınlığım olsa da seni sevmeme engel değil sevgim daha
+            ağır basıyo her zaman. Sana sarılınca rahatlıyorum huzurlu oluyorum kocaman kollarındaaa. Sen bana en güzel
+            duyguları yaşattın hep aşkın en güzel halini yaşıyorum seninle sen benim en yakın arkadaşım her anımda
+            yanımda olansın sen. Kışın tanıştık ilkbahar yaşadık yaz yaşadık sonbahar yaşadık ve şimdi yine kıştayız 4
+            mevsim 12 ay 365 gün geçirdik seninle hepside birbirinden güzeldi
+            Seni ilk gördüğümde sevdim. Seni biraz tanıyınca çok sevdim. Aradan 1 yıl geçmiş bugün ve ben diyorum ki bir
+            insan bir insanı bu kadar çok sevebilir mi 1. Yılımız kutlu olsun küçük Ay’ım</p>
+        <p>Bölüm 7: Evet gelelim benim mesajıma ben yazmadan olur mu tabii ki olmaz. Çünkü sen sevilmeyi kıskanılmayı
+            mutlu olmayı değer görmeyi dibine kadar hakeden birisisin. Ben 04.12.2021 tarihinden itibaren bütün bu
+            duygları birisine yaşatmayı ve yaşamasını öğrendim bundan önce bu duyguları ben kimseyle paylaşmamışım bunu
+            farkettim.
+            Duygu demişken gerçekten saf , temiz , içinden gelen doğal duygular kavga ederken bile sevdiğimiz
+            kıskandığımız ilgi beklediğimiz için kavga ediyoruz bu gayet doğal ve normal bir şey en önemliside bunun
+            sonrasında barısmak neyse konu kavga değil nerden çıktı bu biz yeni bir defter yeni bir sayfa açtık. Kötü
+            olduğumuz için değil kötüde değiliz biz sadece daha da iyi olabilmek için 1. Ayımızı iple çekiyorum 🙂
+            Seni dediğim gibi pilav satarken daha tanıyordum babanla olan babaaa demen ananenin evinde olan fotoğrafın o
+            ikisini hatırlıyorum yüzünü hiç görmemiştim gerçekte sadece 4 Aralık gecesi ilk defa gördüm belki de aynı
+            ortamda bulunduk veya kaldırımdan yan yana geçtik ama eminim o iki an olduğu zaman muhakkak içimde bir
+            şeyler kıpır kıpır olmuştu bunu hissedebiliyorum çünkü senin ruhun benim içimi huzurla dolduruyor.
+            İşte dediğim gibi ondan sonra seninle buluşma fırsatı geçti elime ama nasıl olucağını bilmiyordum istiyordum
+            seninle olmak çünkü çok güzel bir kadınsın ama bu boyutta olucağını tahmin etmemiştim nerde anladığımı
+            sorarsan sana o gece bir gece yazıp bir daha yazmayacağım biri değilsin demiştim öyle bir şeydi çünkü o gece
+            rüya gibiydi 🥹
+            Seninle tanısacağım o gece doğal oldum hiç yapmacık olmaya çalışmadım içimden ne geldiyse onu söyledim
+            espriler yapmaya çalıştım ve sen güldün çok hoşuma gitti gülmem o yanaklarının pempişliği gamzen gözlerinin
+            parlaması melek olduğun belliydi ve etkilemeye çalışmalıydım.
+            Çakal açtım mal gibi ama sonra hemen vazgeçtim sonra dedim ki kendin ol kendin olmaya devam et o seni
+            beğenirse bu iş olur dedim ve sana sürekli söylediğim gibi hayalimde ki kadını düsündüğüm zaman ki şarkıyı
+            açtım ve sende dinliyormuşsun.
+            O soğuk rüzgarlı ama bir o kadar da vücudumu sıcaklatan o gece belinden sana sarıldım yaklaştım ve gözlerine
+            baktım gözlerin parlıyordu sanki cennetteydim ve birden öpesim geldi ve öptüm gerisi masal gibiydi belini
+            kavradım sanki şarkı söylüyor gibiydik ama konusmuyorduk hiç kopmak istemedim o an bitsin istemedim çünkü
+            çok masumdu ikimizinde duyguları ve hep böyle kalıcak.
+            Eve dönerken snap atmak istedim ama sen istemedin orda biraz bozuldum ama vardır bi bildiği dedim sonra
+            melike kızları çıkardı sen söyledin diye düsündüm en bas ama sen söylememişsin kıskanman o gece cok hosuma
+            gitmişti ve suanda da gidiyor. Avcunun içini öpesim geldi çünkü yumuşacıktı ellerini bırakasım gelmedi
+            ellerini sürekli tuttum hep tutmak istedim ve şuanda da tutabildiğim için çok şanslıyım. Ve o gün buluşmadan
+            önce en güzel kombinimi giydim bir şeylerin olacağını hissediyordum ve iyi ki inanmısım cesaret göstermişim
+            çünkü ilk zamanlarda senin utandığın kadar bende utanıyordum.
+            Uzun lafın kısası İYİ’ki Hayatımdasın İYİ,ki Varsın Ve hep Yanımda Ol Seni Çok Seviyorum…
+            -2
+            Sana Pandora bileklik almaya karar verdim ama hiç güzel yok stoklarda kalmamış senin bileğini 17cm olarak
+            düsünüyorum ama hiç yok ve güzelde yok napıcam bilmiyorum
+            -3
+            Bulgaristanda buldum insallah doğrudur ve zamanında yetişir çünkü çok az kaldıııı Ve çok güzel parlıyo
+            fotoğrafta hem gümüş alerjinde olmaz 1. Yılımızı her baktığında hatırlatsın ve senin en sevdiğin renkkkk
+            -4
+            Siparişi verdik 2 güne gelirmiş suat abilere sonra bana gelicekkkkk
+            -5
+            Bana geldi ama öbür sürprizler için biraz uğraşmam gerekkkk Doğum günümde ki daireyi tutmam şart Suat
+            abilerde hediye vermiş mumlu şaraplı çikolatalııı gerçi ben hepsini yapıcaktım onlar almışş 🥹🥹🥹
+            Suat abilerin notu çok güzel duygulandım okurken Balkanların En güzel Çiftiiii
+            -6
+            sen bana gezdim diye kızdın ama sürprizler için uğraşıyorum askım umarım okurken pisman olursun 🙂🙂🙂
+            -7 sen bana mesajı attın ben daha atmadım kesin atmıyıcağımı düşünüyorsun ama atıcammm yarın çok güzel
+            olucak…
+            -8
+            Sabah oldu planım şu;
+            Kahvaltıya gidin
+            4 Aralıkta İçin
+            Kaktüs Aparta Aynı Daireye Git
+            Sudenin Hediyesini Al
+            Sude sürpriz bu kadar sansın
+            Hava kararınca bütün sürprizleri göster
+            Uzun Mesajı Tam 23:59 da Sudeye Yolla 2.Yılınızda daha güzel seyler yapmaya basla
+            -9
+            4 Aralık harici bütün hepsi planladığım gibi gitti simdi tek mesajımı yollamak kaldı mutlu olucağını
+            biliyorum umarım olursun yani çünkü ben çok mutlu oldum benim sürprizlerim senin ki kadar iyi değil çünkü
+            sen çok uğraşmışsın emek göstermişsin ben onları yapmadım 🥺 Beni çok mutlu etttinn ve Hayallerin en
+            güzellerinden birini seçtin gerçekten çok şanslıyız ve o bütün hayalleri gerçekleştirmek için çalısıcam
+            çabalıyıcam çünkü sen benim minik kızım ve aynı zamanda güzel kadınımsın senin mutluluğun benim için en
+            başta gelen şey seni çok seviyorum sevgilim.
+            Tekrardan ve Her zaman İYİ Kİ HAYATIMDASIN
+            İYİ Kİ VARSIN VE HEP OL SENDEN BASKA KİMSEYİ SEVEMEM KİMSEYİDE SEN GİBİ SEVMEDİM KİMSEYLEDE BÖYLESİNE BİR
+            AŞK YAŞAMADIM YAŞAYAMAYACAĞIMIDA BİLİYORUM…</p>
+        <p>Bölüm 8: Sevgillim , Cimcimem , Balım , Birtanem , Her şeyim , , Hayatım , AŞK’ım , Anlamım ve en çokta
+            Karamelim🧡 bu gün 4 Aralık 2022 hayatımın en güzel günü ve en güzel gecesi tıpkı geçen sene olduğu gibi bu
+            mesajın başlangıcı 4 Aralık 2022 bu gün ve gece çok güzel geçti bu gün hayatımın en anlamlı hediyesini aldım
+            ve geçen sene en anlamlı kişisiyle tanıştım bir sonra ki sene ise en çok değer verdiğim kişisi ile birlikte
+            kutlayacağımı biliyorum lafı fazla uzatmıyorum iyi ki tanıştık iyi ki benimlesin iyi ki biziz.
+            ~Kime tutulmuş. Yanarsın ben oluyorum heba , vebaa.
+            ~ Sen dışında..
+            ~SICAK BİR ARALIK GECESİ. ISLATIR YANMIŞ TENİMİ. Yaklaşır o güzel bedeni.
+            Kendisi YAKAMOZ GÜZELİ…
+            Hayatımın en güzel 2 yılını geçirdim seninle ve bir sürü 2 yıl ve bir tek ömrümü geçireceğimi biliyorum.
+            Kimi güldük kimi ağladık kimi kızdık birbirimize zor zamanlarımızda birlikte olduk güzel zamanlarımızda
+            birlikte olduk ve hep olalım olmaya devam edelim. İkimizde bu sene zor zamanlar geçirdik geçen seneden çok
+            daha zor zamanlar ama dimdik ayaktayız ve birlikteyiz hiç bir zorluk bizi birbirimizden ayırmasın sevgilim.
+            Bana kızsanda trip atsanda sana söylediğim bir laf var Senin her haline şiirim ben tabii ki bunlara dikkat
+            ediyorum sonuşta ilişkimiz hala bebek her geçen gün saniye dakika büyümeye devam ediyor şuan konuşamıyor
+            yürüyemiyor ama dişleri çıkmıştır artık. 😁
+            Birlikte bu sene uzak kaldık ben her gün minik bebeğimi görmeye alışıktım ama olsun hedeflerimiz için
+            ilerliyoruz sen yazılım kursuna gidiyorsun ben derslerime çalışıyorum daha fazla çalışıcam biliyorsun sen
+            olmasan sınava girmezdim kayıt olmazdın öyle boş boş çalışırdım. Sen hedeflerin için çalışıyorsun önem
+            veriyorsun ve ben senin bu kararlarına her zaman saygılıyım ve yanındayım.
+            2 yıl ilişkim olucağı veya 1 yıl veya 6 ay bile olucağını hiç düşünmezdim ama hayalinde ki kişiyi bulunca
+            oluyormuş işte her şeyin oluyormus hayatın gülüşün mutluluğun oluyormuş kalbimin atmasının artık bir anlamı
+            var birtanem. Artık aynı yatakta uyuyup uyandığımızı görmek istiyorum ama çalışıp sabretmemiz gerekli bunuda
+            biliyorum sabah birlikte kahvaltımızı hazırlasak kahvemizi içsek sen bana içerde sigara içme diye kızsan
+            birlikte duş alsak eşyaları makineye atsak bulaşık yıkasak yemek yapsak tatlılar denesek her gece birlikte
+            yatakta oynaşsak hep bunları düşünüyorum ve düşünmekten sabır taşına dönücem yakında ama öyle olucağımızı
+            biliyorum hissediyorum.
+            İtalyaya gittiğimiz günlerde gelicek ordada pizza yiyicez bir sürü yer gezicez fotoğraflar çekilicez
+            eğlenicez gülücez düşünmesi bile çok güzel ilk hayalimiz olarak İtalyaya gidelim o hayalimizi
+            gerçekleştirelim sevgilim. Lafı fazla uzatmadan asıl önemli meseleye geçiyorum. Birlikte geçirdiğimiz 2 Yıl
+            730 gün 17.351 saat 1.051.897.53 dakika ve 63.113.&51.9 saniyemiz Kutlu Olsun Karamelim keske o geceye
+            tekrar geri dönsem ve tekrar yaşasam. O gecenin soğukluğu ama içimi ısıtan güzelliğini hala hissediyorum.
+            İyi ki benimlesin , İyi ki Hayatımdasın , İyi ki Biz Sevgilim seni çok seviyorum. İyi ki SEN🧡</p>
+        <p>Bölüm 9: Seni çooooook seviyorum.
+            Senden öncesini hatırlamıyorum bile Hayatım seninle başladı ve seninle başlayan hayatımın bir yılını daha
+            bitti. Bazen sinirden delirsemde yinede sabah uyandığımda günaydın gece uyurken iyi geceler diyebildiğim
+            günün her anı her şeyi anlatabileceğim biri var hayatımda ve benimle ilgili her şeyi ufak detayına kadar
+            biliyor iyi ki var❤️ bazen benim bile kendimde anlamadığım şeyleri sen bende görüyorsun ve hep destek
+            oluyorsun beni benden iyi tanıyorsun iyiliğimi düşünerek söylediğin şeylere kızıyorum bazen ama sen bana
+            bakma beraber büyüycez dedik zaten bende seni büyütmeye çalışıyorum ileride iyi ki beni zorlamışsın demeni
+            bekliyorum 🥹🫶🏻geçen sene ilk tanıştığımız yere gidemedik bu sene tanıştığımız şehirde bile değilim ve çok
+            üzülüyorum 🥺 aldığım kıyafetleri film gecelerimizde giyicez mısır patlatıcaz ve diziler flimler izliycez
+            ama bunun için çalışmamız gerekiyor şuan zor olsada sonu çok güzel olucak 2 yıl oldu ve bu çoookkk uzun bir
+            süre resmen seninle büyüdüm 17 yaşımdan 20 yaşına geldim beraber bir sürü yıllarımız olsun seni çok
+            seviyorumm 2. Yılımız kutlu olsunn❤️❤️❤️❤️🫶🏻🫶🏻🫶🏻❤️‍🔥❤️‍🔥💞</p>
+        <p>Bölüm 10: 01.11.2022
+            İnandığımımı sandın gerçekten?
+            Senin o minik kalbini kırmak hiç farketmiyiceğim kadar kolay ama gerçekten isteyerek olmuyor Onarmasıda öyle
+            bir zor ki gerçekten insan ne yapıcağını bilmiyor bir sürü seçenek düsünüyorum ama hiçbiriside olmuyor hepsi
+            yetersiz ney karşısınds yetersiz biliyor musun?
+            Senin bana verdiğin değer karşısında tabii ki.
+            Ben bu değerin karşısında ne kadar çok hediye alsamda yemek ısmarlasamda öpsemde sarılsamda hiç birinin
+            yerini dolduramıyıcağını biliyorum ama gerçekten karşılığını vermek için çabalıyorum gerek SEVGİ gerek İLGİ
+            gerek KISKANÇLIK gerek ÖZLEM
+            SEVGİ
+            Hiç bu kadar çok birisini sevdiğimi hatırlamıyorum annemden bile çok onu kırdığımda gidip özür bile
+            dilemiyorum ama sana yalvarıyorum resmen annemden çok mu seviyorum ki seni bilmiyorum belkide öyle ama
+            annemde senin kadar iyi bir insan neyse konu annem değil sensin ama birbirinize en çok benzeyen iki insan
+            sizsiniz benim gözümde ikinizde çok değer verip seviyorsunuz ve okula gitmemi istiyorsunuz. Sen benim annem
+            , ablam , kardeşim , minik kızımsın. Ablam veya kız kardeşim olsaydı kesin yine benzerdiniz bu arada çünkü
+            onlar kadar severdim seni bana sanki öyle kardeşlerim varmış gibi düşündürdüğün için çok tesekkür ediyorum
+            sevgilim hep bi ablam olsun istemişimdir.
+            İLGİ
+            Hani bazen sana geç yazıyorsun işte şurda çevrimiçisin burda böylesin diyorum ya o ilgi hastası olduğumdan
+            dolayı sanırım sen bana her öyle yaptığında benimde öyle yapasım geliyor öyle yapmak istiyorum bana geç
+            cevap verildiğinde bende cevap verirdim sendede öyle yapmaya çalıştım ama yazdığın gibi hemen mal gibi
+            yazdım ama tabii ki ben malım çünkü senin o an ne yaptığını bilmiyorum neyle uğraştığını çünkü ben
+            anlayışsız biriyim ben malım çünkü ilgiyi hemen anında mesaj atmaktan ibaret sanıyordum ama asıl ilgi
+            gösteren sensin bunun geç farkına vardım ve farkına varana kadarda hep kavga ettik 🥺
+            Bana verdiğin ilgiyi şuana kadar kimse vermedi sen şımarttın beni sende bana şımarsam bile şiir olur musun
+            Ozbinin dediği gibi
+            olduğun için tesekkürler sevgilim
+            KISKANÇLIK
+            Ben deli gibi kıskanılmayı severim hep öyle olsun istemisimdir kıskanıldığım kadar sevildiğimi düsündüm hep
+            ama şuana kadar ne kıskanılmışııım ne sevilmişim aslında kıskanmak daha güzelmiş kıskanılmaktan çünkü senin
+            değerini daha çok biliyorum sen beni kıskandırmıyorsun evet biliyorum ama ben kıskanıyorum işte seninde beni
+            ne kadar çok kıskandığını biliyorum hissediyorum öyle tatlı bir kıskanış ki onu bile kıskanıyorum senden.
+            ÖZLEM
+            Hani gitmistin ya istanbula otobüse bakıp ağlamıstım öyle bir parça koptu ki içimden sanki kalbim yerimden
+            söküp atılıyormuş gibi hissettim öyle bir acıydı resmen o yüzden kavgalar ettim seninle ama yine yanlıs
+            yapmısım sonuçta yeni girdim hayatına ve bebekliğinden beri seni tanıyan insanlardan uzaklaştırmaya calıstım
+            seni hata yapmısım ama özlemek çok kötü bir duygu ve bir o kadarda güzel en çok bu konu yüzünden huzursuz
+            olup kavga ediyorum seninle bilmiyorum bunun çaresi nedir ama gerçekten çok özlüyorum seni evin önüne
+            bırakıyorum ya sanki bir daha göremiyicekmisim gibi geliyor hemen özlüyorum arkandan öyle bir bakıyorum ki
+            en değerli hazinem beni bırakıp gidiyor içim sızlıyor.
+            Uzun lafın kısası
+            SEVGİ
+            İLGİ
+            KISKANÇLIK
+            ÖZLEM
+            bu duyguları bana DİBİNE KADAR yaşattığın için çok teşekkür ediyorum balım. İlkim ve en özelim sensin ve
+            senden sonrası olmayacak.
+            Seni Çok Seviyorum
+            01.11.2022
+            02:44
+            Göz yaşlarıyla </p>
+        <p>Bölüm 11: MİNİK BEBEĞİM….
+            Hayatımın en güzel doğum gününü bana yaşattığın için tesekkür ederim.
+            Ve en güzel günlerimide yaşatacağına artık daha fazla eminim. Seninle aynı evde yasamak aynı yatakta uyumak
+            uyanmak sarılmak gözlerimi açtığımda seni görmek benim için en güzel ân ben doğum günü pastasını üflerken
+            bunların olmasını diledim ileride zaten bunu 1 ay öncesinde düsünmüstüm ne dileyeceğimi baskada bir şey
+            istemiyorum başka hiç bir şey olmasın sadece seninle o şekilde yaşayabilmek istiyorum.
+            Az önce başım ağrıyor dedin ve kendi kendine dalmışsın keske ben olsaydım seninle ilgilenirdim sana
+            sarılırdım gerçi direkt acile götürürdüm ilaç verirdim başının dibinden ayrılmazdım ama ileride o günlerde
+            gelicek ama sakın bunu dedim diye hasta olma evlenince dayanamam 🥺
+            Bana hayatımın en özel mesajını yolladın hiç bir mesaj beni bu kadar mutlu etmemisti uzun veya kısa olması
+            önemli değil sadece doğum günümde seninle olmak bile bana yeterli gelirdi 00:00 da sarıldığım tek kişi
+            olabilir o da sensin.
+            Gerçi polisler geldi ama neyse bizim hayatımız gerçekten maceralarla dolu olucak bundan eminim cok
+            eğlenicez.
+            Bu gün kolyeyi fırlatınca üzüldüm çünkü dün yaşadığımız mutlu günden sonra onu fırlatman ikimiz için olan
+            bir eşyayı fırlatman üzdü ama sen onu o niyetle fırlatmamışsın onu anladım sen bilerek öyle bir şey
+            yapmazsın bunu biliyorum bende yapamam.
+            Bütün doğum günlerimde ki pastaları ben aldım şuana kadar bunu sanada söylemistim ilk defa birisi benim için
+            bu kadar fazla uğraşmayı bırak pasta aldı başkaları için önemsiz olabilir ama bu benim için çok önemli bir
+            hareketti daha fazla uzatmiyim sevgilim daha uzunları ve değerli olanları hep gelicek.
+            HAYATIMIN EN GÜZEL DOĞUM GÜNÜNÜ BİR TEK SEN YAŞATABİLİRDİN VE HEP SEN YAŞATICAKSIN BENDE AYNEN O SEKİLDE
+            SEVGİLİM BENİMLE BİRLİKTE OLDUĞUN İÇİN KENDİMİ ÇOK ŞANSLI HİSSEDİYORUM VE HEP ŞANSLI OLİYİM 🥺 SENİ ÇOK
+            SEVİYORUMMMMMMMMMM</p>
+        <p> Bölüm 12: R:Bu geceyi özel gece olarak kabul ediyorum
+            S:Niye
+            R:Çocuğumuzu düsündüm cünkü bu gece cok fazla erkek olucağı içime doğdu bu geceyi ona anlatıcam erkek olursa
+            diyicem ki annenle ben birbirimize o kadar çok değer veriyorduk ki gençken biri ağır bastığında bir
+            haftalığına bile olsa öbürümüz hemen ilgisiz kaldım umursamaz oldum diye kavga çıkartıyordu diyicem ama suan
+            ikimizinde ilgi odağı tek sen oldun diye anlatıcam
+            S:Ya seni çok seviyorum 🥺
+            R:Ve çok büyük bir karar aldık diyicem Aşkım sen cok düz mantıksın kızma bana ama Bende çok detaycıyım Bizim
+            kavgalarımız bu yüzden oluyor Ama senin ufak bir şeyin benim için önemli senin için büyük bir şey benim için
+            önemli olabilir buna rağmen ikimizinde minicik bir şey olan ama kocamanda değer vereceğimiz oğlumuzun olması
+            için bu büyük ve zorlu yolda birlikte gitmek için Beni tekrar sevdiğini söyler misin ?
+            S:SENİ ÇOK SEVİYORUM
+            R:işte bu yüzden anlatıcam
+            S:kız olursa
+            R:onun içinde baska bir gece kavga çıkartırım</p>
+        <!-- Diğer yazılar -->
+    </section>
+
+    <!--Son Sayfa: Müzik-->
+    <section class="music-section">
+        <h2>Vee son olarak olmazsa olmaz...</h2>
+        <a href="https://youtu.be/eF2RxNjj0xM?si=W1QuUxJC-N-gTRxH" target="_blank">Buraya tıkladığında tanıştığımız güne
+            gidiceksin</a>
+    </section>
+
+</body>
+
+</html>

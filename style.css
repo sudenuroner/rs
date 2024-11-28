@@ -1,0 +1,460 @@
+/* Genel Intro Bölümü Stili */
+.intro {
+    background-image: url('5.jpg');
+    background-size: cover;
+    /* Fotoğrafın arka plana tamamen yayılmasını sağlar */
+    background-position: center center;
+    /* Fotoğrafın ortalanmasını sağlar */
+    background-attachment: fixed;
+    /* Arka planın sayfada kaymasını engeller */
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    min-height: 430px;
+    /* Fotoğrafın boyutlarıyla uyumlu minimum yükseklik */
+}
+
+/* Masaüstü (large screen) için stil */
+@media (min-width: 1024px) {
+    .intro {
+        padding: 150px 0;
+        /* Masaüstü için daha fazla padding */
+        min-height: 500px;
+        /* Daha büyük ekranlar için yükseklik */
+    }
+
+    .intro h1 {
+        font-size: 4em;
+        /* Başlık boyutu */
+    }
+
+    .intro p {
+        font-size: 1.5em;
+        /* Alt yazı boyutu */
+    }
+}
+
+/* Mobil (küçük ekran) için stil */
+@media (max-width: 768px) {
+    .intro {
+        padding: 50px 0;
+        /* Mobilde daha az padding */
+        min-height: 350px;
+        /* Mobilde daha küçük yükseklik */
+        background-attachment: scroll;
+        /* Mobilde kaydırırken arka planın hareket etmemesini sağlar */
+        background-size: cover;
+        /* Resmin tam olarak ekranı kaplamasını sağla */
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+        /* Başlık boyutunu küçült */
+    }
+
+    .intro p {
+        font-size: 1.2em;
+        /* Alt yazıyı küçült */
+    }
+}
+
+
+/* Genel Ses Kaydı Bölümü Stili */
+.audio-section {
+    background-image: url('gül.jpg');
+    background-size: cover;
+    /* Fotoğrafın tüm bölümü kaplamasını sağlar */
+    background-position: center center;
+    /* Fotoğrafın ortalanmasını sağlar */
+    background-attachment: fixed;
+    /* Arka planın sayfada kaymamasını sağlar */
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    min-height: 500px;
+    /* Fotoğrafın boyutlarına uygun minimum yükseklik */
+}
+
+/* Masaüstü (large screen) için stil */
+@media (min-width: 1024px) {
+    .audio-section {
+        padding: 150px 20px;
+        /* Daha fazla padding */
+        min-height: 600px;
+        /* Daha büyük ekranlar için yükseklik */
+    }
+
+    .audio-section h2 {
+        font-size: 3.5em;
+        /* Başlık boyutunu büyük ekranlar için artır */
+    }
+
+    .audio-section audio {
+        width: 60%;
+        /* Ses kaydını masaüstü için %60 genişlikte yap */
+        max-width: 800px;
+        /* Ses kaydının maksimum genişliği */
+    }
+}
+
+/* Mobil (küçük ekran) için stil */
+@media (max-width: 768px) {
+    .audio-section {
+        padding: 50px 20px;
+        /* Daha az padding mobilde */
+        min-height: 400px;
+        /* Mobilde daha küçük yükseklik */
+        background-attachment: scroll;
+        /* Mobilde arka planın kayması */
+    }
+
+    .audio-section h2 {
+        font-size: 2.5em;
+        /* Başlık boyutunu küçült */
+    }
+
+    .audio-section audio {
+        width: 90%;
+        /* Ses kaydını mobilde %90 genişlikte yap */
+        max-width: 100%;
+        /* Ses kaydının maksimum genişliği */
+    }
+}
+
+/* Genel Stil */
+.intro,
+.audio-section,
+.counter-section {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Telefonlarda (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .intro,
+    .audio-section,
+    .counter-section {
+        padding: 50px 0;
+        /* Daha küçük padding */
+    }
+
+    .counter-section #counter {
+        font-size: 1.5em;
+        /* Sayaç yazı boyutunu küçült */
+        padding: 8px 16px;
+    }
+}
+
+/* Canlı Sayaç Bölümü */
+.counter-section {
+    background-image: url('ejder.jpg');
+    background-size: cover;
+    /* Fotoğrafın arka planı tamamen kaplamasını sağlar */
+    background-position: center center;
+    /* Fotoğrafın ortalanmasını sağlar */
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    min-height: 500px;
+    /* Fotoğrafın boyutlarına uygun minimum yükseklik */
+}
+
+/* Sayaç Stili */
+.counter-section #counter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #872f2f;
+    /* Sayaç metninin rengi */
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Hover efekti için geçiş */
+}
+
+/* Hover Efekti */
+.counter-section #counter:hover {
+    background-color: #e0ffff;
+    /* Hover sırasında arka plan renginin değişmesi */
+    color: #8cc5d4;
+    /* Hover sırasında metin renginin değişmesi */
+}
+
+/* Masaüstü (large screen) için stil */
+@media (min-width: 1024px) {
+    .counter-section {
+        padding: 150px 0;
+        /* Daha büyük ekranlar için daha fazla padding */
+        min-height: 640px;
+        /* Büyük ekranlar için minimum yükseklik */
+    }
+
+    .counter-section #counter {
+        font-size: 2.5em;
+        /* Büyük ekranlarda daha büyük sayaç boyutu */
+        padding: 15px 30px;
+        /* Daha fazla padding */
+    }
+}
+
+/* Mobil (küçük ekran) için stil */
+@media (max-width: 768px) {
+    .counter-section {
+        padding: 50px 0;
+        /* Mobil cihazlar için daha az padding */
+        min-height: 400px;
+        /* Mobilde daha küçük yükseklik */
+        background-size: cover;
+        /* Resmi tam olarak ekranı kaplayacak şekilde ayarla */
+        background-position: center center;
+        /* Fotoğrafın mobilde ortalanması */
+    }
+
+    .counter-section #counter {
+        font-size: 1.2em;
+        /* Mobil cihazlar için daha küçük sayaç boyutu */
+        padding: 8px 16px;
+        /* Daha az padding */
+    }
+}
+
+/* Fotoğraf Galerisi Bölümü */
+.photo-gallery {
+    text-align: center;
+    background-color: #f8f8f8;
+    /* Hafif gri arka plan */
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.photo-gallery h2 {
+    font-size: 2em;
+    color: #4682b4;
+    /* Başlık için mavi renk */
+    margin-bottom: 40px;
+}
+
+/* Fotoğrafları içeren bölüm */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    /* Fotoğrafları ortalar */
+}
+
+/* Fotoğraf stili */
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    transition: transform 0.3s ease;
+    /* Hover sırasında büyüme animasyonu */
+}
+
+/* Hover efekti */
+.photos img:hover {
+    transform: scale(1.05);
+    /* Hover sırasında büyüme efekti */
+}
+
+/* Mobil (küçük ekran) için stil */
+@media (max-width: 768px) {
+    .photo-gallery h2 {
+        font-size: 1.5em;
+        /* Mobilde başlık boyutunu küçült */
+    }
+
+    .photos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Mobil için kolon genişliğini küçült */
+    }
+}
+
+
+
+.writings {
+    background-color: #fafafa;
+    /* Hafif gri arka plan */
+    padding: 60px 20px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    /* Koyu gri metin rengi */
+}
+
+.writings h2 {
+    font-size: 2.5em;
+    color: #4682b4;
+    /* Mavi başlık rengi */
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    /* Başlık harflerini büyük yap */
+    letter-spacing: 2px;
+    /* Harfler arası boşluk */
+}
+
+.writings p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555;
+    /* Daha açık gri yazı rengi */
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #ff69b4;
+    /* Pembe sol şerit */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Hafif gölge */
+    transition: background-color 0.3s ease;
+}
+
+.writings p:hover {
+    background-color: #f0f8ff;
+    /* Hover ile arka plan değişikliği */
+}
+
+.writings p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff69b4;
+    /* İlk harfi renklendir ve büyüt */
+}
+
+.writings {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+    .writings {
+        padding: 40px 10px;
+        /* Daha küçük padding */
+    }
+
+    .writings h2 {
+        font-size: 2em;
+        /* Başlık boyutunu küçült */
+    }
+
+    .writings p {
+        font-size: 1em;
+        /* Paragraf yazı boyutunu küçült */
+    }
+}
+
+
+.music-section {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    /* Flexbox ile düzenle */
+    flex-direction: column;
+    /* Başlık ve linkleri dikey sıraya yerleştir */
+    align-items: center;
+    /* Ortada hizala */
+    justify-content: center;
+    /* Dikeyde ortalamayı sağlar */
+}
+
+.music-section h2 {
+    font-size: 2.5em;
+    color: #6a5acd;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+    .music-section h2 {
+        font-size: 2em;
+        /* Başlık boyutunu küçült */
+        margin-bottom: 15px;
+        /* Başlık ve diğer öğe arasındaki boşluğu azalt */
+    }
+
+    .music-section a {
+        font-size: 1.5em;
+        /* Link boyutunu küçült */
+        padding: 15px 30px;
+        /* Padding değerlerini biraz daha küçük yap */
+    }
+}
+
+.music-section a {
+    font-size: 1.5em;
+    color: #ff4500;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid #ff4500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+    /* Linkler arasında boşluk bırak */
+}
+
+@media (max-width: 768px) {
+    .music-section a {
+        font-size: 1.2em;
+        /* Mobilde link boyutunu küçült */
+        padding: 12px 24px;
+        /* Padding değerini azalt */
+        margin-bottom: 15px;
+        /* Linkler arasındaki boşluğu küçült */
+    }
+}
+
+@media (max-width: 768px) {
+    .music-section h2 {
+        margin-bottom: 30px;
+        /* Başlık ile linkler arasındaki boşluğu artır */
+    }
+
+    .music-section a {
+        margin-top: 20px;
+        /* Linklerin üstüne boşluk ekle */
+    }
+}
+
+.music-section {
+    overflow: hidden;
+    /* Taşan içeriği gizler */
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* İçerikler taşarsa alt satıra geçer */
+    justify-content: space-between;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Dikey sıraya geçer */
+        align-items: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
